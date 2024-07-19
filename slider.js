@@ -63,17 +63,17 @@ document.addEventListener("DOMContentLoaded", function() {
                     iconLenguaje3.style.width = '100px';
                     iconLenguaje1.style.backgroundImage = 'url(images/github-dark.svg)';
                     iconLenguaje2.style.backgroundImage = 'url(images/docker.svg)';
-                    iconLenguaje3.style.backgroundImage = 'url(images/virtualbox_logo.png)';
+                    iconLenguaje3.style.backgroundImage = 'url(images/Virtualbox_logo.png)';
                 }
         });
     });
 });
 document.addEventListener('DOMContentLoaded', function() {
-    console.log("DOM completamente cargado y analizado"); // Verificar que el DOM esté cargado
+    console.log("DOM completamente cargado y analizado"); 
     const flecha = document.querySelector('.flecha');
-    if (flecha) { // Verificar que el elemento SVG exista
+    if (flecha) { 
         flecha.addEventListener('click', function() {
-            console.log("holaaa"); // Registro en la consola para depuración
+            console.log("holaaa");
             document.getElementById('HabilidadesConsulta').scrollIntoView({ behavior: 'smooth' });
         });
     } else {
