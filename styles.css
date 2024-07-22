@@ -1,9 +1,6 @@
-
-
-
 body {
-    background: rgb(43,43,65);
-    background: radial-gradient(circle, rgba(43,43,65,1) 21%, rgba(34,36,36,1) 49%);
+    background: rgb(43, 43, 65);
+    background: radial-gradient(circle, rgba(43, 43, 65, 1) 21%, rgba(34, 36, 36, 1) 49%);
     color: white;
     display: flex;
     flex-direction: column;
@@ -17,14 +14,14 @@ h1 {
     text-align: center;
 }
 
-h2{
+h2 {
     text-align: center;
 }
 
 
 #Presentacion {
-    background: rgb(43,43,65);
-    background: radial-gradient(circle, rgba(43,43,65,1) 21%, rgba(34,36,36,1) 49%);
+    background: rgb(43, 43, 65);
+    background: radial-gradient(circle, rgba(43, 43, 65, 1) 21%, rgba(34, 36, 36, 1) 49%);
     border-color: rgb(214, 0, 0);
     padding: 10px;
     color: white;
@@ -37,13 +34,15 @@ h2{
     align-items: center;
 }
 
-#letra{
+#letra {
     margin-top: 3%;
 }
-#Presentacion p{
+
+#Presentacion p {
     margin: 0;
 }
-#texto{
+
+#texto {
     width: 1000px;
 }
 
@@ -52,7 +51,8 @@ h2{
     align-items: center;
 }
 
-#fotoKata,#fotoCuk {
+#fotoKata,
+#fotoCuk {
     margin-right: 20px;
     border-radius: 19px;
     width: 300px;
@@ -60,57 +60,66 @@ h2{
     margin: 0;
 }
 
-#Biografia{
-    background: rgb(2,0,36);
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+#Biografia {
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
     color: white;
     text-align: center;
-} 
-h3{
+}
+
+h3 {
     text-align: center;
     font-size: 30px;
     color: b;
 }
-#biografia img{
+
+#biografia img {
     width: 50px;
 }
 
-.icon{
+.icon {
     width: 50px;
     height: 70px;
 }
 
-#iconLenguaje1{
-background-image: url(images/css.svg);
+#iconLenguaje1 {
+    background-image: url(images/css.svg);
 }
 
-#iconLenguaje2{
+#iconLenguaje2 {
     background-image: url(images/html5.svg);
 }
-#iconLenguaje3{
+
+#iconLenguaje3 {
     background-image: url(images/javascript.svg);
 }
-#iconLenguaje4{
+
+#iconLenguaje4 {
     background-image: url(images/php_dark.svg);
     margin-left: 10px;
 }
 
-#iconLenguaje1,#iconLenguaje2,#iconLenguaje3,#iconLenguaje4{
+#iconLenguaje1,
+#iconLenguaje2,
+#iconLenguaje3,
+#iconLenguaje4 {
     width: 100px;
     height: 100px;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
 }
-#logos{
+
+#logos {
     display: flex;
     justify-content: center;
     width: 400px;
 }
-.deslizar{
+
+.deslizar {
     display: flex;
     justify-content: space-between;
-    
+
 }
 
 .slider-container {
@@ -132,17 +141,18 @@ background-image: url(images/css.svg);
 .slide {
     flex: 0 0 auto;
     padding: 10px;
-    margin-right: 20px; 
+    margin-right: 20px;
 }
 
 .bases-de-datos {
-    display: none; 
-}
-.herramientas{
     display: none;
 }
 
-#proyectos{
+.herramientas {
+    display: none;
+}
+
+#proyectos {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -150,7 +160,8 @@ background-image: url(images/css.svg);
     color: black;
 }
 
-#KataScore, #CUK{
+#KataScore,
+#CUK {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -161,52 +172,64 @@ background-image: url(images/css.svg);
     transition: transform 0.5s ease;
     padding: 10px;
     border-radius: 10px;
-    border:3px solid;
+    border: 3px solid;
     border-color: black;
-    
+
 }
-.descripcion{
+
+.descripcion {
     color: black;
     text-align: center;
     margin: 0;
 }
-.proyectoInd{
+
+.proyectoInd {
     text-decoration: none;
 }
-#Contenedorfoto{
+
+#Contenedorfoto {
     width: 300px;
     margin: 0;
 }
-#foto{
+
+#foto {
     border-radius: 30px;
     width: 250px;
     margin-bottom: 10px;
 }
 
-#KataScore:hover, #CUK:hover{
+#KataScore:hover,
+#CUK:hover {
     transform: scale(1.05);
     border-color: blue;
     cursor: pointer;
 }
-#logoBoton{
+
+#logoBoton {
     width: 30px;
     height: 30px;
 }
-.boton{
+
+.boton {
     width: 60px;
     display: flex;
-    color:white;
+    color: white;
     background-color: black;
     border-radius: 10px;
 }
-h2{
-    color:white;
+
+h2 {
+    color: white;
     font-size: 30px;
 }
-.boton:hover{
+
+.boton:hover {
     cursor: pointer;
 }
-#correo,#git,#linkedin{
+
+#correo,
+#git,
+#linkedin {
     display: flex;
     margin-top: 20px;
     background: white;
@@ -218,45 +241,55 @@ h2{
     border-radius: 11px;
     transition: background-color 0.5s ease;
 }
-#git a{
+
+#git a {
     color: black;
 }
-#correo:hover, #git:hover, #boton:hover, #linkedin:hover{
+
+#correo:hover,
+#git:hover,
+#boton:hover,
+#linkedin:hover {
     background-color: rgb(165, 153, 153);
     cursor: pointer;
 }
 
-#Contacto{
- display: flex;
- align-items: center;
- margin-top: 20px;
- gap: 20px;
+#Contacto {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    gap: 20px;
 }
-#Contacto svg{
+
+#Contacto svg {
     margin-right: 10px;
 }
-#telefono{
+
+#telefono {
     display: flex;
 }
 
-#link{
+#link {
     color: white;
     text-decoration: none;
 }
-#formulario{
+
+#formulario {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 400px;
 }
-.inputForm{
+
+.inputForm {
     padding: 8px;
     margin: 5px 0px;
     border-radius: 10px;
     width: 100%;
 }
-#mensaje{
+
+#mensaje {
     width: 100%;
     padding: 5px;
     border-radius: 10px;
@@ -265,9 +298,9 @@ h2{
     max-width: 500px;
 }
 
-#Consulta{
-    background: rgb(41,41,62);
-    background: linear-gradient(360deg, rgba(41,41,62,1) 15%, rgba(52,54,64,1) 37%, rgba(61,70,70,1) 80%);
+#Consulta {
+    background: rgb(41, 41, 62);
+    background: linear-gradient(360deg, rgba(41, 41, 62, 1) 15%, rgba(52, 54, 64, 1) 37%, rgba(61, 70, 70, 1) 80%);
     width: 600px;
     height: 350px;
     border-radius: 20px;
@@ -277,68 +310,80 @@ h2{
     align-items: center;
     margin-top: 20px;
 }
-#tituloConsulta{
+
+#tituloConsulta {
     margin-bottom: 5px;
     margin-top: 0;
 }
-.flecha{
+
+.flecha {
     margin-top: 5%;
     color: white;
 }
-.flecha:hover{
+
+.flecha:hover {
     color: blue;
     cursor: pointer;
 }
-#HabilidadesConsulta{
- display: flex;
- flex-direction: column;
- width: 100%;
- align-items: center;
+
+#HabilidadesConsulta {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
 }
-#Nombre, #Correo{
+
+#Nombre,
+#Correo {
     display: flex;
     width: 200px;
 }
-#boton{
+
+#boton {
     border-radius: 10px;
     padding: 5px 20px;
     margin-top: 10px;
 }
 
-#ejemplos{
+#ejemplos {
     display: flex;
     gap: 20px;
 }
 
-.tituloProyect{
+.tituloProyect {
     color: black;
 }
 
-.slider-arrow{
-    transition: color 0.5s ease ;
+.slider-arrow {
+    transition: color 0.5s ease;
 }
 
-.slider-arrow:hover{
-  cursor: pointer;
-  color:rgb(9, 9, 65)
+.slider-arrow:hover {
+    cursor: pointer;
+    color: rgb(9, 9, 65)
 }
-#Estudios{
+
+#Estudios {
     margin: 20px 0px
 }
-.tituloEstudio{
+
+.tituloEstudio {
     margin: 0;
     text-align: initial;
     font-size: 30px;
 }
+
 #Estudios p {
     margin: 0;
     font-size: 26px;
 }
-#box{
-    margin-bottom:15px;
+
+#box {
+    margin-bottom: 15px;
     position: relative;
 }
-#box::before{
+
+#box::before {
     content: '';
     position: absolute;
     width: 3px;
@@ -348,7 +393,7 @@ h2{
     top: 10px
 }
 
-#box::after{
+#box::after {
     content: '';
     position: absolute;
     width: 20px;
@@ -357,4 +402,126 @@ h2{
     background-color: blue;
     left: -38px;
     top: 10px
+}
+
+#Gestor {
+    display: none;
+}
+
+#Contenedorherramientas {
+    display: none;
+}
+
+@media screen and (min-width:300px) and (max-width: 600px) {
+
+    #contenido {
+        flex-direction: column;
+    }
+
+    #foto {
+        width: 220px;
+    }
+
+    #Contenedorfoto {
+        display: flex;
+        justify-content: center
+    }
+
+    #texto {
+        width: 340px;
+    }
+
+    #Contacto {
+        flex-direction: column;
+        gap: 0px;
+    }
+
+    #ejemplos {
+        flex-direction: column;
+    }
+
+    #Presentacion {
+        height: auto;
+    }
+
+    #Presentacion p {
+        font-size: 22px;
+    }
+
+    #Consulta {
+        width: auto;
+    }
+
+    .inputForm {
+        width: auto;
+    }
+
+    #mensaje {
+        width: 300px;
+    }
+
+    #Gestor {
+        display: block;
+    }
+
+    #iconLenguaje5 {
+        background-image: url(images/mysql.svg);
+    }
+
+    #iconLenguaje6 {
+        background-image: url(images/github-dark.svg)
+    }
+
+    #iconLenguaje7 {
+        background-image: url(images/docker.svg)
+    }
+
+    #iconLenguaje8 {
+        background-image: url(images/Virtualbox_logo.png)
+    }
+
+    #iconLenguaje5,
+    #iconLenguaje6,
+    #iconLenguaje7,
+    #iconLenguaje8 {
+        height: 100px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    #Contenedorherramientas {
+        display: block;
+    }
+
+    #iconosHerramientas {
+        display: flex;
+        justify-content: center;
+    }
+
+    #iconosHerramientas img {
+        height: 100px;
+        width: 100px;
+    }
+
+    #iconLenguaje1,
+    #iconLenguaje2,
+    #iconLenguaje3,
+    #iconLenguaje4 {
+        width: 75px;
+        height: 75px;
+    }
+
+    .tituloEstudio {
+        font-size: 23px;
+    }
+
+    .bi-chevron-right,
+    .bi-chevron-left {
+        display: none;
+    }
+
+    * {
+        overflow-x: hidden;
+    }
 }

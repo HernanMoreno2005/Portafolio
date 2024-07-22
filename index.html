@@ -1,132 +1,156 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <title>Portafolio</title>
 </head>
+
 <body>
-    <section id="Presentacion"> 
+    <section id="Presentacion">
         <h2> Acerca de mi </h2>
         <div id="contenido">
             <div id="Contenedorfoto">
                 <img src="images/fotoPresentacion.png" alt="Imagen de una rana" id="foto">
             </div>
             <div id="letra">
-                <p id="texto">Hola, soy Hernán Moreno un desarrolador web con 3 años de experiencia y mi meta es realizar sitios web eficientes y accesibles para todos,
-                  con una gran pasión por el backend y las bases de datos,Estoy enfocado en
-                    seguir desarrollándome para poder crear mejores  aplicaciones y webs.</p>
+                <p id="texto">Hola, soy Hernán Moreno un desarrollador web con 3 años de experiencia y mi meta es
+                    realizar sitios web eficientes y accesibles para todos,
+                    con una gran pasión por el backend y las bases de datos. Estoy enfocado en
+                    seguir desarrollándome para poder crear mejores aplicaciones y webs.</p>
                 <section id="Contacto">
                     <section id="correo" onclick="abrirCorreo()">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
-                            <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z"/>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                            class="bi bi-envelope" viewBox="0 0 16 16">
+                            <path
+                                d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z" />
                         </svg>
                         <p>Contáctame</p>
                     </section>
                     <a href="https://github.com/HernanMoreno2005" class="proyectoInd" target="_blank">
-                    <section id="git">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
-                                <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
+                        <section id="git">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                                class="bi bi-github" viewBox="0 0 16 16">
+                                <path
+                                    d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8" />
                             </svg>
-                        <p>Github</p>
-                    </section>
+                            <p>Github</p>
+                        </section>
                     </a>
                     <a href="https://www.linkedin.com/in/hernán-moreno-2aa5b331a/" class="proyectoInd" target="_blank">
-                    <section id="linkedin">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
-                            <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/>
-                          </svg>
-                    <p>Linkedin</p>
-                    </section>
-                </a>
+                        <section id="linkedin">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                                class="bi bi-linkedin" viewBox="0 0 16 16">
+                                <path
+                                    d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z" />
+                            </svg>
+                            <p>Linkedin</p>
+                        </section>
+                    </a>
                 </section>
             </div>
         </div>
-                <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" fill="currentColor" class="bi bi-arrow-bar-down flecha"  viewBox="0 0 16 16">
-                    <path fill-rule="evenodd" d="M1 3.5a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13a.5.5 0 0 1-.5-.5M8 6a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 0 1 .708-.708L7.5 12.293V6.5A.5.5 0 0 1 8 6"/>
-                  </svg>
-            </section>  
-            </section>  
-               
-       
+        <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" fill="currentColor"
+            class="bi bi-arrow-bar-down flecha" viewBox="0 0 16 16">
+            <path fill-rule="evenodd"
+                d="M1 3.5a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13a.5.5 0 0 1-.5-.5M8 6a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 0 1 .708-.708L7.5 12.293V6.5A.5.5 0 0 1 8 6" />
+        </svg>
+    </section>
+    </section>
+
+
     </section>
     </section>
     <section id="HabilidadesConsulta">
-    <section id="proyectos">
-        <h2>Proyectos</h2>
-        <section id="ejemplos">
-        <a href="https://github.com/TecnoStorm/KataRange" target="_blank" class="proyectoInd">
-            <section id="KataScore">
-                <h3 class="tituloProyect">KataRange</h3>
-                <img src="images/KataRange.PNG" id="fotoKata">
-                <p class="descripcion"> Software administrador de Torneos creado para la CUK</p>
-            </section>
-        </a>
-        <a href="https://github.com/TecnoStorm/CUK" class="proyectoInd">
-            <section id="CUK">
-                <h3 class="tituloProyect">Web CUK</h3>
-                <img src="images/Cuk.PNG" id="fotoCuk">
-                <p class="descripcion"> pagina web</p>
-                <p class="descripcion">pedida por la CUK</p>
-            </section>
-        </a>
-    </section>
-        </section>
-    
-    <section id="Habilidades">
-    <h3 id="titulo">Habilidades</h3>
-        <div class="slider-container">
-            <section class="deslizar">
-                <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" fill="currentColor" class="bi bi-chevron-left slider-arrow" viewBox="0 0 16 16">
-                    <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0"/>
-                </svg>
-                <section id="logos">
-                    <section>
+        <section id="proyectos">
+            <h2>Proyectos</h2>
+            <section id="ejemplos">
+                <a href="https://github.com/TecnoStorm/KataRange" target="_blank" class="proyectoInd">
+                    <section id="KataScore">
+                        <h3 class="tituloProyect">KataRange</h3>
+                        <img src="images/KataRange.PNG" id="fotoKata">
+                        <p class="descripcion"> Software administrador de Torneos creado para la CUK</p>
                     </section>
-                    <section id="iconLenguaje1"></section>
-                    <section id="iconLenguaje2"></section>
-                    <section id="iconLenguaje3"></section>
-                    <section id="iconLenguaje4"></section>
-                </section>
-                <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" fill="currentColor" class="bi bi-chevron-right slider-arrow" viewBox="0 0 16 16">
-                    <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"/>
-                </svg>
+                </a>
+                <a href="https://github.com/TecnoStorm/CUK" class="proyectoInd">
+                    <section id="CUK">
+                        <h3 class="tituloProyect">Web CUK</h3>
+                        <img src="images/Cuk.PNG" id="fotoCuk">
+                        <p class="descripcion"> pagina web</p>
+                        <p class="descripcion">pedida por la CUK</p>
+                    </section>
+                </a>
             </section>
-            <div class="slider-content">
-                <div class="slide lenguajes"></div>
-                <div class="slide bases-de-datos"></div>
-                <div class="slide herramientas"></div>
+        </section>
+
+        <section id="Habilidades">
+            <h3 id="titulo">Habilidades</h3>
+            <div class="slider-container">
+                <section class="deslizar">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" fill="currentColor"
+                        class="bi bi-chevron-left slider-arrow" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0" />
+                    </svg>
+                    <section id="logos">
+                        <section>
+                        </section>
+                        <section id="iconLenguaje1"></section>
+                        <section id="iconLenguaje2"></section>
+                        <section id="iconLenguaje3"></section>
+                        <section id="iconLenguaje4"></section>
+                    </section>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" fill="currentColor"
+                        class="bi bi-chevron-right slider-arrow" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708" />
+                    </svg>
+                </section>
+                <div class="slider-content">
+                    <div class="slide lenguajes"></div>
+                    <div class="slide bases-de-datos"></div>
+                    <div class="slide herramientas"></div>
+                </div>
             </div>
-        </div>  
-</section>
-<section id="Estudios">
-<h3>Estudios</h3>
-    <section id="box">
-        <h3 class="tituloEstudio">Instituto superior Brazo Oriental</h3>
-        <p>2021 - 2023</p>
+            <section id="Gestor">
+                <h3>Gestor de bases de datos</h3>
+                <section id="iconLenguaje5"></section>
+            </section>
+            <section id="Contenedorherramientas">
+                <h3>herramientas</h3>
+                <section id="iconosHerramientas">
+                    <img src="images/github-dark.svg">
+                    <img src="images/docker.svg">
+                    <img src="images/Virtualbox_logo.png">
+                </section>
+            </section>
+        </section>
+        <section id="Estudios">
+            <h3>Estudios</h3>
+            <section id="box">
+                <h3 class="tituloEstudio">Instituto superior Brazo Oriental</h3>
+                <p>2021 - 2023</p>
+            </section>
+            <section id="box">
+                <h3 class="tituloEstudio"> Facultad de ingenieria</h3>
+                <p>2024 - Actualidad</p>
+            </section>
+        </section>
+        <section id="Consulta">
+            <h3 id="tituloConsulta">Consultas<h3>
+                    <form action="https://formsubmit.co/beron361@gmail.com" method="POST" id="formulario">
+                        <input type="text" name="name" class="inputForm" placeholder="Nombre">
+                        <input type="email" name="email" class="inputForm" placeholder="correo">
+                        <textarea name="message" id="mensaje"> </textarea>
+                        <input type="submit" value="Enviar" id="boton">
+                        <input type="hidden" name="_next" value="https://hernanmoreno2005.github.io/Portafolio/">
+                        <input type="hidden" name="_captcha" value="false">
+                    </form>
+        </section>
+        <script src="slider.js"></script>
     </section>
-    <section id="box">
-        <h3 class="tituloEstudio"> Facultad de ingenieria</h3>
-        <p>2024 - Actualidad</p>
-    </section>
-</section>
-<section id="Consulta">
-<h3 id="tituloConsulta">Consultas<h3>
-<form action="https://formsubmit.co/beron361@gmail.com" method="POST" id="formulario">
-    <input type="text" name="name" class="inputForm" placeholder="Nombre" >
-    <input type="email" name="email" class="inputForm" placeholder="correo">
-    <textarea name="message" id="mensaje"> </textarea>
-    <input type="submit" value="Enviar" id="boton">
-    <input type="hidden" name="_next" value="http://127.0.0.1/Portafolio/index.html">
-    <input type="hidden" name="_captcha" value="false">
-
-
-
-</form>
-</section>        
-<script src="slider.js"></script>
-</section>
-    </body>
+</body>
 
 </html>
