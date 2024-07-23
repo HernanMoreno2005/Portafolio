@@ -412,7 +412,7 @@ h2 {
     display: none;
 }
 
-@media screen and (min-width:300px) and (max-width: 600px) {
+@media screen  and (max-width: 600px) {
 
     #contenido {
         flex-direction: column;
@@ -523,5 +523,47 @@ h2 {
 
     * {
         overflow-x: hidden;
+    }
+}
+
+@media screen and (min-width:601px) and (max-width: 1023px){
+    #contenido{
+        flex-direction: column;
+    }
+    #texto{
+        width: auto;
+    }
+    #Contenedorfoto{
+        display: flex;
+        justify-content: center;
+    }
+    #Presentacion{
+        height: 1300px;
+    }
+}
+@media screen and (min-width:1024px) and (max-width: 1300px){
+    #contenido{
+        flex-direction: column;
+    }
+    #Contenedorfoto{
+        display: flex;
+        justify-content: center;
+    }
+    #texto{
+        width: auto;
+        text-align: center;
+        font-size: 42px;
+    }
+    #Presentacion{
+        height: 1400px;
+    }
+    #foto{
+        width: 300px;
+    }
+    #Contacto{
+        justify-content: center;
+    }
+    #Contacto p{
+        font-size: 26px;
     }
 }
