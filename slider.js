@@ -69,15 +69,24 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 document.addEventListener('DOMContentLoaded', function() {
-    console.log("DOM completamente cargado y analizado"); 
     const flecha = document.querySelector('.flecha');
-    if (flecha) { 
-        flecha.addEventListener('click', function() {
-            console.log("holaaa");
-            document.getElementById('HabilidadesConsulta').scrollIntoView({ behavior: 'smooth' });
-        });
-    } else {
-        console.error("No se encontró el elemento SVG con la clase 'flecha'");
-    }
+    flecha.addEventListener('click', function() {
+        const target = document.getElementById('HabilidadesConsulta');
+        const inicio = window.scrollY;
+        const final = target.getBoundingClientRect().top + window.scrollY;
+        const distancia = final - inicio;
+        const duracion = 600; 
+        let tiempoDeInicio = null;
+
+        function animacionScroll(tiempoActual) {
+            if (!tiempoDeInicio) tiempoDeInicio = tiempoActual;
+            const tiempoPasado = tiempoActual - tiempoDeInicio;
+            const progreso = Math.min(tiempoPasado / duracion, 1);
+            window.scrollTo(0, inicio + distancia * progreso);
+            if (tiempoPasado < duracion) requestAnimationFrame(animacionScroll);
+        }
+        requestAnimationFrame(animacionScroll);
+    });
 });
+
 

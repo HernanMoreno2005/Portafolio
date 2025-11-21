@@ -10,15 +10,6 @@ body {
 }
 
 
-h1 {
-    text-align: center;
-}
-
-h2 {
-    text-align: center;
-}
-
-
 #Presentacion {
     background: rgb(43, 43, 65);
     background: radial-gradient(circle, rgba(43, 43, 65, 1) 21%, rgba(34, 36, 36, 1) 49%);
@@ -51,15 +42,6 @@ h2 {
     align-items: center;
 }
 
-#fotoKata,
-#fotoCuk {
-    margin-right: 20px;
-    border-radius: 19px;
-    width: 300px;
-    height: 300px;
-    margin: 0;
-}
-
 #Biografia {
     background: rgb(2, 0, 36);
     background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
@@ -67,14 +49,9 @@ h2 {
     text-align: center;
 }
 
-h3 {
+h3,h2 {
     text-align: center;
     font-size: 30px;
-    color: b;
-}
-
-#biografia img {
-    width: 50px;
 }
 
 .icon {
@@ -99,10 +76,7 @@ h3 {
     margin-left: 10px;
 }
 
-#iconLenguaje1,
-#iconLenguaje2,
-#iconLenguaje3,
-#iconLenguaje4 {
+#iconLenguaje1,#iconLenguaje2,#iconLenguaje3,#iconLenguaje4 {
     width: 100px;
     height: 100px;
     background-size: contain;
@@ -119,7 +93,6 @@ h3 {
 .deslizar {
     display: flex;
     justify-content: space-between;
-
 }
 
 .slider-container {
@@ -160,8 +133,7 @@ h3 {
     color: black;
 }
 
-#KataScore,
-#CUK {
+#KataScore,#CUK {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -174,7 +146,6 @@ h3 {
     border-radius: 10px;
     border: 3px solid;
     border-color: black;
-
 }
 
 .descripcion {
@@ -193,15 +164,13 @@ h3 {
 }
 
 #foto {
-    border-radius: 30px;
-    width: 250px;
-    margin-bottom: 10px;
+    border-radius: 17px;
+    width: 67%;
 }
 
-#KataScore:hover,
-#CUK:hover {
+#KataScore:hover,#CUK:hover {
     transform: scale(1.05);
-    border-color: blue;
+    border-color: rgb(1, 1, 107);
     cursor: pointer;
 }
 
@@ -218,18 +187,11 @@ h3 {
     border-radius: 10px;
 }
 
-h2 {
-    color: white;
-    font-size: 30px;
-}
-
 .boton:hover {
     cursor: pointer;
 }
 
-#correo,
-#git,
-#linkedin {
+#correo,#git,#linkedin {
     display: flex;
     margin-top: 20px;
     background: white;
@@ -241,15 +203,10 @@ h2 {
     border-radius: 11px;
     transition: background-color 0.5s ease;
 }
-
 #git a {
     color: black;
 }
-
-#correo:hover,
-#git:hover,
-#boton:hover,
-#linkedin:hover {
+#correo:hover,#git:hover,#boton:hover,#linkedin:hover {
     background-color: rgb(165, 153, 153);
     cursor: pointer;
 }
@@ -265,56 +222,6 @@ h2 {
     margin-right: 10px;
 }
 
-#telefono {
-    display: flex;
-}
-
-#link {
-    color: white;
-    text-decoration: none;
-}
-
-#formulario {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 400px;
-}
-
-.inputForm {
-    padding: 8px;
-    margin: 5px 0px;
-    border-radius: 10px;
-    width: 100%;
-}
-
-#mensaje {
-    width: 100%;
-    padding: 5px;
-    border-radius: 10px;
-    height: 80px;
-    max-height: 80px;
-    max-width: 500px;
-}
-
-#Consulta {
-    background: rgb(41, 41, 62);
-    background: linear-gradient(360deg, rgba(41, 41, 62, 1) 15%, rgba(52, 54, 64, 1) 37%, rgba(61, 70, 70, 1) 80%);
-    width: 600px;
-    height: 350px;
-    border-radius: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: 20px;
-}
-
-#tituloConsulta {
-    margin-bottom: 5px;
-    margin-top: 0;
-}
 
 .flecha {
     margin-top: 5%;
@@ -324,25 +231,6 @@ h2 {
 .flecha:hover {
     color: blue;
     cursor: pointer;
-}
-
-#HabilidadesConsulta {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    align-items: center;
-}
-
-#Nombre,
-#Correo {
-    display: flex;
-    width: 200px;
-}
-
-#boton {
-    border-radius: 10px;
-    padding: 5px 20px;
-    margin-top: 10px;
 }
 
 #ejemplos {
@@ -411,7 +299,60 @@ h2 {
 #Contenedorherramientas {
     display: none;
 }
+.proyecto {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: 400px;
+    overflow: hidden;
+    cursor: pointer;
+    border-radius: 10px;
+    flex-direction: column;
+    background-color: white;
+}
 
+.fotoProyecto {
+    width:70%;
+    height: 228px;
+    display: block;
+    object-fit: cover;
+    transition: transform 0.3s;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s;
+}
+.icons {
+    display: flex;
+    gap: 15px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.4s, transform 0.4s;
+}
+
+.icons img {
+    width: 40px;
+    height: 40px;
+}
+
+.proyecto:hover .overlay {
+    background-color: rgba(0,0,0,0.7);
+}
+
+.proyecto:hover .icons {
+    opacity: 1;
+    transform: translateY(0);
+}
 @media screen  and (max-width: 600px) {
 
     #contenido {
@@ -448,14 +389,6 @@ h2 {
         font-size: 22px;
     }
 
-    #Consulta {
-        width: auto;
-    }
-
-    .inputForm {
-        width: auto;
-    }
-
     #mensaje {
         width: 300px;
     }
@@ -480,10 +413,7 @@ h2 {
         background-image: url(images/Virtualbox_logo.png)
     }
 
-    #iconLenguaje5,
-    #iconLenguaje6,
-    #iconLenguaje7,
-    #iconLenguaje8 {
+    #iconLenguaje5,#iconLenguaje6,#iconLenguaje7,#iconLenguaje8 {
         height: 100px;
         background-size: contain;
         background-repeat: no-repeat;
@@ -504,10 +434,7 @@ h2 {
         width: 100px;
     }
 
-    #iconLenguaje1,
-    #iconLenguaje2,
-    #iconLenguaje3,
-    #iconLenguaje4 {
+    #iconLenguaje1,#iconLenguaje2,#iconLenguaje3,#iconLenguaje4 {
         width: 75px;
         height: 75px;
     }
