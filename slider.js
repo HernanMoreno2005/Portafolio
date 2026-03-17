@@ -122,7 +122,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 particlesJS("particles-js", {
     particles: {
-        number: { value: 80, density: { enable: true, value_area: 800 } },
+        number: { value: 80, density: { enable: false } },
         color: { value: "#ffffff" },
         shape: { type: "circle", stroke: { width: 0, color: "#000000" } },
         opacity: { value: 0.5 },
@@ -146,5 +146,6 @@ particlesJS("particles-js", {
             push: { particles_nb: 4 }
         }
     },
-    retina_detect: true
+    retina_detect: false
 });
+
