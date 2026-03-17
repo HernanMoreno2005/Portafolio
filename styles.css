@@ -375,6 +375,8 @@ footer a{
     border: solid black;
     padding: 1vh;
     cursor: pointer;
+    z-index: 999;
+    margin-bottom: 1vh;
 }
 #descargar:hover{
     border: solid rgba(0, 0, 146, 0.776);
