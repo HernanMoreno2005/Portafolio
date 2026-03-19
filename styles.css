@@ -6,10 +6,8 @@ body {
 
 /* ---- reset ---- */ body{ margin:0; font:normal 75% Arial, Helvetica, sans-serif; } canvas{ display: block; vertical-align: bottom; } /* ---- particles.js container ---- */ #particles-js{ position:absolute; width: 100%; height: 100%; background-color: #0f0f20; background-image: url(""); background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; } /* ---- stats.js ---- */ .count-particles{ background: #000022; position: absolute; top: 48px; left: 0; width: 80px; color: #13E8E9; font-size: .8em; text-align: left; text-indent: 4px; line-height: 14px; padding-bottom: 2px; font-family: Helvetica, Arial, sans-serif; font-weight: bold; } .js-count-particles{ font-size: 1.1em; } #stats, .count-particles{ -webkit-user-select: none; margin-top: 5px; margin-left: 5px; } #stats{ border-radius: 3px 3px 0 0; overflow: hidden; } .count-particles{ border-radius: 0 0 3px 3px; }
 #Presentacion {
-    background: rgb(43, 43, 65);
     background: radial-gradient(circle, rgba(43, 43, 65, 1) 21%, rgba(34, 36, 36, 1) 49%);
     border-color: rgb(214, 0, 0);
-    padding: 5vh;
     color: white;
     width: 100%;
     height: 100vh;
@@ -175,14 +173,16 @@ h3,h2 {
     border: solid 1px black;
     border-radius: 10px;
     transition: background-color 0.5s ease;
+    box-sizing: border-box;
+    height: 4vh;
 }
 #git a {
     color: black;
 }
 #correo:hover,#git:hover,#boton:hover,#linkedin:hover {
-    background-color: rgb(165, 153, 153);
     cursor: pointer;
     border: solid white ;
+    box-sizing: border-box;
 }
 
 #Contacto {
@@ -225,6 +225,7 @@ h3,h2 {
     width: 100%;
     height: 100%;
     background: transparent;
+    background: radial-gradient(circle, rgba(43, 43, 65, 1) 21%, rgba(34, 36, 36, 1) 49%);
 }
 
 #habilidades{
@@ -239,6 +240,11 @@ h3,h2 {
 }
 
 .tituloProyect {
+    text-decoration: none;
+    background-image: linear-gradient(to right, #000205, #000515, #000620, #000629, #010532);
+    background-repeat: no-repeat;
+    background-size: 100% 3px;
+    background-position: 0 100%;
     color: black;
 }
 .count-particles{
@@ -258,8 +264,11 @@ h3,h2 {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    position: relative;
 }
-
+#cv h3{
+    position: relative;
+}
 .tituloEstudio {
     margin: 0;
     text-align: initial;
@@ -282,10 +291,11 @@ h3,h2 {
 
 #Gestor {
     display: none;
+    position: relative;
 }
-
 #Contenedorherramientas {
     display: none;
+    position: relative;
 }
 .proyecto {
     position: relative;
@@ -293,29 +303,41 @@ h3,h2 {
     align-items: center;
     justify-content: center;
     width: 35vh;
-    height: 45vh;
+    height: 50vh;
     overflow: hidden;
-    cursor: pointer;
     border-radius: 10px;
     flex-direction: column;
     background-color: white;
     padding: 2vh;
+    box-sizing: border-box;
 }
-
+#tituloPrincipalProyectos{
+    position: relative;
+}
+.contenedorDescripcion{
+    width: 100%;
+    border-top: 0.7vh solid;
+    border-image: linear-gradient(to right top, #000205, #000515, #000620, #000629, #010532) 1;
+}
 .fotoProyecto {
-    width:70%;
+    width: 100%;
     height: 25vh;
     display: block;
-    transition: transform 0.3s;
+    margin: 0 auto; /* centra */
+    border-radius: 10px;
+    object-fit: cover;
+    object-position: center;
+    margin-bottom: 2vh;
 }
 .overlay {
+    display: flex;
+    flex-direction: column;
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     background-color: rgba(0,0,0,0); 
-    display: flex;
     justify-content: center;
     align-items: center;
     transition: background-color 0.3s;
@@ -342,8 +364,38 @@ h3,h2 {
 .proyecto:hover{
   border: solid white;
 }
+.botonCodigo img {
+   width: 4vh;
+}
+.botonCodigo{
+    width: 10vh;
+    height: 3vh;
+    padding: 1vh;
+    background-image: linear-gradient(to right top, #000205, #000515, #000620, #000629, #010532);
+    display: flex;
+    background-color: black;
+    color: white;
+    align-items: center;
+    border-radius: 10px;
+    gap: 1vh;
+    border: solid 0.1vh white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+#botones{
+    display: flex;
+    gap: 1vh;
+    margin-top: 5vh;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.4s, transform 0.4s;
+}
+#botones a{
+    display: flex;
+    color: white;
+    gap: 1vh;
+}
 
-.proyecto:hover .icons {
+.proyecto:hover .icons,.proyecto:hover #botones {
     opacity: 1;
     transform: translateY(0);
 }
@@ -353,9 +405,10 @@ footer{
     align-items: center;
     border-top: solid white;
     margin-top: 2vh;
-    width: 100%;
     padding: 1.5vh;
     height: 2vh;
+}
+footer svg{
     cursor: pointer;
 }
 footer a{
@@ -385,6 +438,9 @@ footer a{
 }
 #cv a{
     text-decoration: none;
+}
+#titulo{
+    position: relative;
 }
 @media screen  and (max-width: 400px) {
     html,body{
@@ -509,5 +565,18 @@ footer a{
     }
     .tituloEstudio{
         font-size: 6vh;
+    }
+    .proyecto{
+         height: 70vh;
+    }
+    .botonCodigo{
+        width: 20vh;
+    }
+    #fotoLink{
+        height: 8vh;
+        width: 4vh;
+    }
+    #descargar{
+        font-size: 5vh;
     }
 }
